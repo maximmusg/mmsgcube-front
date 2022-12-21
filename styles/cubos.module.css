@@ -1,0 +1,99 @@
+.cubos { 
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80rem;
+
+
+}
+
+/* ver tamanos */
+
+.contenido {
+    padding: 1rem;
+}
+
+.contenido h3 {
+    font-weight: 900;
+    font-size: 3 rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.descripcion {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+.precio {
+    color: var(--primary);
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 900;
+}
+
+.enlace {
+    margin-top: 2rem;
+    display: block;
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 900;
+    transition-property: background-color;
+    transition-duration: 300ms;
+
+}
+
+.enlace:hover {  
+    background-color: rgb(235, 235, 49);
+}
+
+.texto { 
+    white-space: pre-wrap;
+}
+
+.formulario { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+
+.formulario label {
+    font-size: 2.2rem;
+}
+
+.formulario select {
+    border: 2px solid var(--negro);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.formulario input[type="submit"] {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    padding: 1.4rem;
+    color: white;
+    background-color: var(--negro);
+    transition-property: background-color;
+    transition-duration: 600ms;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+}
